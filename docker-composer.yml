@@ -4,5 +4,5 @@ services:
     build: .
     ports:
       - "1290:80"
-    cpus: 0.5       # limita a 50% de 1 CPU
-    mem_limit: 512m # limita a 512 MB de RAM
+    cpus: 0.1       # limita a 50% de 1 CPU
+    mem_limit: 100m # limita a 512 MB de RAM

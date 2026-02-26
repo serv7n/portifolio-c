@@ -19,7 +19,7 @@ async def teste_carga(url, num_requisicoes):
         await asyncio.gather(*tarefas)
 
 if __name__ == "__main__":
-    url = "https://dronefire.online/"  # Altere para a URL desejada
+    url = "http://192.168.0.38:1290/"  # Altere para a URL desejada
     num_requisicoes = 100000  # Número total de requisições
     asyncio.run(teste_carga(url, num_requisicoes))
     print("Teste de carga concluído. Verifique o arquivo 'resultados.log' para mais detalhes.")
