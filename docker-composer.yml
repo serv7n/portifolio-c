@@ -3,15 +3,6 @@ services:
   meu-servico:
     build: .
     ports:
-      - "80:80"
-    deploy:   # opcional se for Swarm
-      resources:
-        limits:
-          cpus: '1.0'
-          memory: 1g
-        reservations:
-          cpus: '0.5'
-          memory: 512m
-    # Para docker-compose normal, use isto:
-    cpus: 1.0        # máximo de 1 CPU
-    mem_limit: 1g    # máximo de 1GB RAM
+      - "1290:80"
+    cpus: 0.5       # limita a 50% de 1 CPU
+    mem_limit: 512m # limita a 512 MB de RAM
